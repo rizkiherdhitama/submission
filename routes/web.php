@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return '<h1>This is main page</h1>';
+    return view('home');
 });
-Route::post('/post', function () {
-    return '<h2>This is post page</h2>';
+Route::get('/form', function () {
+    return view('form');
 });
