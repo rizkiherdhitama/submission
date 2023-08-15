@@ -1,7 +1,6 @@
 @extends('layout')
-@section('content')
 
-<body class="bg-gray-100 font-sans">
+@section('content')
     <section class="py-6">
         <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-semibold mb-4">Create Submission</h2>
@@ -28,8 +27,8 @@
                 <div class="mb-4">
                     <label for="submitter" class="block text-gray-700 text-sm font-medium mb-1">Submitter</label>
                     <input type="text" id="submitter" name="submitter"
-                        class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-indigo-200" value="UserA"
-                        disabled required>
+                        class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-indigo-200" value="UserA" disabled
+                        required>
                 </div>
                 <div class="mb-4">
                     <label for="status" class="block text-gray-700 text-sm font-medium mb-1">Status</label>
@@ -46,8 +45,4 @@
         </div>
 
     </section>
-</body>
 @endsection
-
-
-</html>
