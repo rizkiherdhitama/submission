@@ -11,18 +11,20 @@ class Submission extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['type', 'attachment', 'user_id', 'status_id'];
+
     public function submitter(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'user_id');
+      return $this->belongsTo(User::class, 'user_id');
     }
 
     public function status(): BelongsTo
     {
-        return $this->belongsTo(Status::class);
+      return $this->belongsTo(Status::class);
     }
 
     public function histories(): HasMany
     {
-        return $this->hasMany(History::class);
+      return $this->hasMany(History::class);
     }
 }
